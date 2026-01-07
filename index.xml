@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pravin Kumar</title>
-    <link>https://pk8s.cloud/</link>
+    <link>https://pk8scloud.github.io/</link>
     <description>Recent content on Pravin Kumar</description>
     <generator>Hugo</generator>
     <language>en-in</language>
-    <atom:link href="https://pk8s.cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pk8scloud.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://pk8s.cloud/readme/</link>
+      <link>https://pk8scloud.github.io/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://pk8s.cloud/readme/</guid>
+      <guid>https://pk8scloud.github.io/readme/</guid>
       <description>&lt;h1 id=&#34;hello-im-pravin-kumar&#34;&gt;Hello, I’m Pravin Kumar&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Cloud DevOps Engineer&lt;/strong&gt; who lives in the terminal.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;what-i-do-and-enjoy-doing&#34;&gt;What I do (and enjoy doing):&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Playing around with Linux (yes, I distro hop — a lot)&lt;/li&gt;&#xA;&lt;li&gt;Automating repetitive stuff (mostly with Bash &amp;amp; Python)&lt;/li&gt;&#xA;&lt;li&gt;Building things in the cloud — and breaking them to learn more&lt;/li&gt;&#xA;&lt;li&gt;Containerizing everything that moves&lt;/li&gt;&#xA;&lt;li&gt;Writing infra as code, configs as code, code as code, and recently &amp;hellip; OS as code&lt;/li&gt;&#xA;&lt;li&gt;Tinkering with homelab setups&lt;/li&gt;&#xA;&lt;li&gt;Living that &lt;strong&gt;VIM life&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Always learning. Always building. Often debugging.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
