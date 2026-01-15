@@ -6,7 +6,15 @@
     <description>Recent content on Pravin Kumar</description>
     <generator>Hugo</generator>
     <language>en-in</language>
+    <lastBuildDate>Thu, 15 Jan 2026 07:38:08 +0530</lastBuildDate>
     <atom:link href="https://pk8scloud.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim Life</title>
+      <link>https://pk8scloud.github.io/post/vim_life/</link>
+      <pubDate>Mon, 12 Jan 2026 05:14:10 +0530</pubDate>
+      <guid>https://pk8scloud.github.io/post/vim_life/</guid>
+      <description>&lt;h2 id=&#34;vim-for-terminal-browser-os-everywhere&#34;&gt;VIM for Terminal, Browser, OS, Everywhere!&lt;/h2&gt;&#xA;&lt;p&gt;If you are into IT, you must have heard of it.&#xA;Most people know Vim as a terminal-based text editor. Some use it in a very basic flow: open Vim, switch to insert mode, write content, and then write &amp;amp; quit (&lt;code&gt;:wq&lt;/code&gt;). And yes — that is correct.&lt;/p&gt;&#xA;&lt;p&gt;But Vim is much more than that.&lt;/p&gt;&#xA;&lt;p&gt;I’m here to share the true potential of Vim (and Vi / Neovim): from basic to advanced features, and how you can extend Vim’s philosophy to run your entire PC using Vim and Vim keybindings.&lt;/p&gt;</description>
+    </item>
     <item>
       <title></title>
       <link>https://pk8scloud.github.io/readme/</link>

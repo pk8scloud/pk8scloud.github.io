@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-in">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://pk8scloud.github.io/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://pk8scloud.github.io/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://pk8scloud.github.io/css/github.min.css' />
+    <link rel="stylesheet" href='https://pk8scloud.github.io/css/github-style.css' />
+    <link rel="stylesheet" href='https://pk8scloud.github.io/css/light.css' />
+    <link rel="stylesheet" href='https://pk8scloud.github.io/css/dark.css' />
+    <link rel="stylesheet" href='https://pk8scloud.github.io/css/syntax.css' />
+    <title>Vim Life - Pravin Kumar</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/github.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    <link rel="stylesheet" href="https://pk8scloud.github.io/css/custom.css">
+    <script type="text/javascript" src="https://pk8scloud.github.io/js/custom.js"></script>
+
+    
+    <meta name="description"
+  content="VIM for Terminal, Browser, OS, Everywhere! If you are into IT, you must have heard of it. Most people know Vim as a terminal-based text editor. Some use it in a very basic flow: open Vim, switch to insert mode, write content, and then write &amp; quit (:wq). And yes — that is correct.
+But Vim is much more than that.
+I’m here to share the true potential of Vim (and Vi / Neovim): from basic to advanced features, and how you can extend Vim’s philosophy to run your entire PC using Vim and Vim keybindings.
+" />
+<meta name="keywords"
+  content='blog' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://pk8scloud.github.io/post/vim_life/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Vim Life - Pravin Kumar" />
+<meta name="twitter:description"
+  content="VIM for Terminal, Browser, OS, Everywhere! If you are into IT, you must have heard of it. Most people know Vim as a terminal-based text editor. Some use it in a very basic flow: open Vim, switch to insert mode, write content, and then write &amp; quit (:wq). And yes — that is correct.
+But Vim is much more than that.
+I’m here to share the true potential of Vim (and Vi / Neovim): from basic to advanced features, and how you can extend Vim’s philosophy to run your entire PC using Vim and Vim keybindings.
+" />
+<meta name="twitter:site" content="https://pk8scloud.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://pk8scloud.github.io/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Vim Life - Pravin Kumar">
+<meta property="og:description"
+  content="VIM for Terminal, Browser, OS, Everywhere! If you are into IT, you must have heard of it. Most people know Vim as a terminal-based text editor. Some use it in a very basic flow: open Vim, switch to insert mode, write content, and then write &amp; quit (:wq). And yes — that is correct.
+But Vim is much more than that.
+I’m here to share the true potential of Vim (and Vi / Neovim): from basic to advanced features, and how you can extend Vim’s philosophy to run your entire PC using Vim and Vim keybindings.
+" />
+<meta property="og:url" content="https://pk8scloud.github.io/post/vim_life/" />
+<meta property="og:site_name" content="Vim Life" />
+<meta property="og:image"
+  content="https://pk8scloud.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2026-01-12 05:14:10 &#43;0530 IST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://pk8scloud.github.io/">
+        <img class="octicon" height="32" width="32" src="/images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://pk8scloud.github.io/">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://pk8scloud.github.io/">
+        <img class="octicon octicon-mark-github v-align-middle" height="32" width="32" src="/images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://pk8scloud.github.io/">
+                  <img class=" avatar-user"
+                    src="/images/profile.jpeg"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://pk8scloud.github.io/">Pravin Kumar</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="https://pk8scloud.github.io/post/vim_life/">Vim Life</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Mon, 12 Jan 2026 05:14:10 &#43;0530"
+                    class="no-wrap">
+                    Mon, 12 Jan 2026 05:14:10 &#43;0530</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Thu, 15 Jan 2026 07:38:08 &#43;0530"
+                    class="no-wrap">
+                    Thu, 15 Jan 2026 07:38:08 &#43;0530</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      840 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h2 id="vim-for-terminal-browser-os-everywhere">VIM for Terminal, Browser, OS, Everywhere!</h2>
+<p>If you are into IT, you must have heard of it.
+Most people know Vim as a terminal-based text editor. Some use it in a very basic flow: open Vim, switch to insert mode, write content, and then write &amp; quit (<code>:wq</code>). And yes — that is correct.</p>
+<p>But Vim is much more than that.</p>
+<p>I’m here to share the true potential of Vim (and Vi / Neovim): from basic to advanced features, and how you can extend Vim’s philosophy to run your entire PC using Vim and Vim keybindings.</p>
+<p>The goal is not to turn you into a Vim wizard overnight, but to:</p>
+<ul>
+<li>Get you familiar with Vim’s power</li>
+<li>Introduce tools that use Vim keybindings</li>
+<li>Motivate you to become keyboard-oriented</li>
+</ul>
+<blockquote>
+<p><strong>This shift alone can drastically improve productivity — whether you’re working on a remote server or your local machine.</strong></p>
+</blockquote>
+<hr>
+<h3 id="getting-started-understanding-the-potential-of-vim">Getting Started: Understanding the Potential of Vim</h3>
+<p>Did you know Vim has built-in support for:</p>
+<ul>
+<li>Man pages</li>
+<li>Calculator</li>
+<li>Auto-completion</li>
+<li>Regex-based editing</li>
+<li>File explorer</li>
+<li>Dictionary &amp; spell check</li>
+<li>Split views &amp; tabs</li>
+<li>Embedded terminal</li>
+<li>Running shell commands without leaving Vim</li>
+<li>Capturing command output directly into buffers</li>
+<li>and much more&hellip;</li>
+</ul>
+<p>And on top of that, Vim (especially Neovim) is highly customizable.</p>
+<p>You can:</p>
+<ul>
+<li>Keep it minimal and lightweight</li>
+<li>Or turn it into a full IDE</li>
+<li>Or something uniquely yours</li>
+</ul>
+<blockquote>
+<p>Vim adapts to your workflow — not the other way around.</p>
+</blockquote>
+<hr>
+<h3 id="some-powerful-built-in-vim-examples">Some Powerful Built-in Vim Examples</h3>
+<p>Here are a few examples that show what Vim can do out of the box:</p>
+<ul>
+<li>
+<p>Open file explorer (NetRW):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vim .
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># If you are already in VIM</span>
+</span></span><span class="line"><span class="cl">:Ex <span class="c1"># or</span>
+</span></span><span class="line"><span class="cl">:Explore
+</span></span></code></pre></div></li>
+<li>
+<p>Open the man page for a word under the cursor:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">K
+</span></span></code></pre></div></li>
+<li>
+<p>Open web page link under the cursor in your browser .</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">gx
+</span></span></code></pre></div></li>
+<li>
+<p>Increment/decrement numbers:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Ctrl + a
+</span></span><span class="line"><span class="cl">Ctrl + x
+</span></span></code></pre></div></li>
+<li>
+<p>Global search &amp; replace using regex:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:%s/&lt;keyword&gt;/&lt;replacement&gt;/g
+</span></span></code></pre></div></li>
+<li>
+<p>Change color schemes:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:colorscheme &lt;name&gt;
+</span></span></code></pre></div></li>
+<li>
+<p>Enable spell check:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:set spell
+</span></span></code></pre></div></li>
+<li>
+<p>Auto-complete in insert mode:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Ctrl + n
+</span></span></code></pre></div></li>
+<li>
+<p>Built-in terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:terminal
+</span></span></code></pre></div></li>
+</ul>
+<p>And this is without plugins.</p>
+<hr>
+<h3 id="learning-vim-the-right-way">Learning Vim (The Right Way)</h3>
+<p>Yes, Vim has a learning curve.<br>
+But trust me — it is absolutely worth it.</p>
+<p>If online tutorials feel overwhelming, Vim already has the best starting point built in.</p>
+<p><code>vimtutor</code></p>
+<p>Just run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vimtutor
+</span></span></code></pre></div><p>It is:</p>
+<ul>
+<li>Interactive</li>
+<li>Beginner-friendly</li>
+<li>Well-structured</li>
+<li>Designed to teach you Vim inside Vim</li>
+</ul>
+<p>It takes you from <em>zero to confident</em>, covering:</p>
+<ul>
+<li>Modes</li>
+<li>Motions</li>
+<li>Operators</li>
+<li>Buffers</li>
+<li>Basic editing philosophy</li>
+</ul>
+<blockquote>
+<p>If you do nothing else — do <code>vimtutor</code>.</p>
+</blockquote>
+<hr>
+<h3 id="browsing-the-internet-with-vim-keybindings">Browsing the Internet with Vim Keybindings</h3>
+<p>Once Vim clicks, using a mouse in the browser starts feeling… slow.</p>
+<p>You can bring Vim-style navigation to your browser using extensions like:</p>
+<ul>
+<li>Vimium</li>
+<li>Vimium-C</li>
+</ul>
+<p>With these, you can:</p>
+<ul>
+<li>Scroll using <code>j</code> / <code>k</code></li>
+<li>Open links with <code>f</code></li>
+<li>Switch tabs with <code>J</code> / <code>K</code></li>
+<li>Close tabs with <code>x</code></li>
+<li>Search for content with <code>/</code></li>
+<li>Copy URLs with <code>yy</code></li>
+<li>Open URL in new tab with <code>P</code></li>
+</ul>
+<p>No mouse.<br>
+No trackpad.<br>
+Pure keyboard flow.</p>
+<hr>
+<h3 id="vim-philosophy-at-the-os-level-window-managers">Vim Philosophy at the OS Level (Window Managers)</h3>
+<p>Why limit efficient navigation to just the editor?</p>
+<p>Window managers—especially <strong>tiling window managers</strong>—bring the same principles that make Vim powerful to the operating system itself. Instead of manually dragging, resizing, and stacking windows with a mouse, a window manager lets you <strong>control window placement, focus, and layout entirely from the keyboard</strong>.</p>
+<p>Popular window managers include:</p>
+<ul>
+<li>i3</li>
+<li>Sway (Wayland)</li>
+<li>Hyprland</li>
+<li>Aerospace (macOS)</li>
+</ul>
+<p>These tools encourage a workflow where:</p>
+<ul>
+<li>Windows are treated like buffers</li>
+<li>Focus is moved intentionally, not visually hunted</li>
+<li>Layouts are predictable and repeatable</li>
+<li>Workspaces act as logical contexts for tasks</li>
+</ul>
+<p>By removing the friction of mouse-driven window management, your environment becomes faster, more consistent, and far less distracting. Just like Vim, a window manager fades into the background—allowing you to stay in flow and focus on the work, not the interface.</p>
+<hr>
+<h2 id="tools-with-vim-keybindings-and-increasing-productivity">Tools with VIM Keybindings and increasing productivity</h2>
+<p>Vim keybindings extend far beyond the editor itself and are deeply woven into the Unix and Linux ecosystem. Many built-in tools and terminal applications—such as <code>less</code>, <code>man</code>, <code>bash</code> (vi mode), <code>tmux</code>, and even <code>SSH</code> sessions—either use Vim-style navigation by default or offer it as an option. This consistency allows users to carry the same muscle memory across tools, reducing cognitive load and context switching. Once you learn Vim motions, you can navigate documentation, scroll logs, edit command lines, and move through terminal interfaces with the same efficiency everywhere. Over time, Vim keybindings stop being editor-specific shortcuts and become a universal language for interacting with Unix systems.</p>
+<p>Once you embrace Vim keybindings, you’ll naturally gravitate toward tools that share the same philosophy:</p>
+<ul>
+<li>Keyboard-driven</li>
+<li>Scriptable</li>
+<li>Minimal</li>
+<li>Powerful</li>
+</ul>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Learn Vim and practice it until it becomes a natural part of your daily workflow. Once mastered, you no longer have to think about how to get things done — your actions become automatic through muscle memory.</p>
+<p>At that point, Vim fades into the background and your focus shifts entirely to what truly matters: solving problems, creating things, and getting more work done with clarity and speed.</p>
+<p>Vim isn’t just a tool you use — it becomes a skill you carry everywhere.</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://pk8scloud.github.io/js/toc.js'></script>
+<link rel="stylesheet" href='https://pk8scloud.github.io/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://pk8scloud.github.io/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://pk8scloud.github.io/js/github-style.js"></script>
+
+
+
+
+
+
+
+</html>
